@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="./css/HomeCss.css">
+	<title>Locatec Online</title>
+	<fieldset>
+		<img src = "./images/logotec.png" alt = "Logo of Tec" style="width:30%;" id="img1" />
+		<h1>Locatec Online</h1>
+		<h3>Welcome! Here, you can search or report lost items in the campus. Let's help each other!</h3>
+	</fieldset>
+</head>
+
+<body>
+
+	<fieldset id="field1">
+		<form>
+			<legend>Lost an Item?</legend>
+			<input type="button" class="Hbutton" value="Look for an Item" id="LookButton">
+		</form>
+		<form>
+			<legend>Found an Item?</legend>
+			<input type="button" class="Hbutton" value="Report a found Item" id="ReportButton">
+		</form>
+	</fieldset>
+
+	<fieldset class="hide" id="field2">
+			<form id="form1">
+				<p><b>First, you need to login before search for your lost item.</b></p>
+				<br>
+				<p>Student ID:</p>
+				<input type="text" id="StudentId">
+				<br>
+				<p>Password:</p>
+				<input type="password" class="input" id="StudentPass">
+				<br><br>
+				<input type="submit" class="Hbutton" value="Login" id="LogBut">
+				<span class="ErrorMsg" id="LogError"></span>
+			</form>
+			<form id="form2">
+				<legend>Search for your item:</legend>
+				<br>
+				<input type="text" class="input" id="SeaItem">
+				<br><br>
+				<input type="submit" class="Hbutton" value="Search" id="SeaBut">
+				<span class="ErrorMsg" id="SeaError"></span>
+<pre>
+You can search by item, by the person who find it or by category.
+Categories can be:
+	-Electronics
+	-IDCards
+	-Clothes
+	-PersonalObjects
+	-Books</pre>
+			</form>
+			<form id="form5">
+				<p id="sorry"><b>Sorry, we have no results for your search.</b></p>
+				<br>
+				<p><b>You can post your lost item if you want, if someone finds your item, we will give him your contact info.</b></p>
+				<br>
+				<p>Lost Object:</p>
+				<input type="text" class="input" id="Los1" size="25">
+				<br>
+				<p>Who lost it? (Type your name):</p>
+				<input type="text" class="input" id="Los2" size="25">
+				<br>
+				<p>Provide a contact email:</p>
+				<input type="text" class="input" id="Los5" size="25">
+				<br>
+				<p>Category:</p>
+				<br>
+				<select class="inputList" id="Los3">
+					<option disabled selected value="0" style="font-style: italic;">Select category</option>
+					<option value="Electronics">Electronics</option>
+					<option value="IDCards">ID Cards</option>
+					<option value="Clothes">Clothes</option>
+					<option value="PersonalObjects">Personal Objects</option>
+					<option value="Books">Books</option>
+					<option value="Other">Other</option>
+				</select><br>
+				<p>Description:</p>
+				<input type="text" class="input" id="Los4" size="120">
+				<br><br>
+				<input type="submit" class="Hbutton" value="Send" id="LosBut">
+				<span class="ErrorMsg" id="LosError"></span>
+			</form>
+			<form id="form6">
+				<p><b>Your Lost Item Information has been submitted!</b></p>
+			</form>
+	</fieldset>
+
+	<fieldset class="hide" id="field3">
+		<form id="form3">
+			<legend>Report a found item:</legend>
+			<br>
+			<p>Found Object:</p>
+			<input type="text" class="input" id="Rep1" size="25">
+			<br>
+			<p>Who found it?(Type your name):</p>
+			<input type="text" class="input" id="Rep2" size="25">
+			<br>
+			<p>Provide a contact email:</p>
+			<input type="text" class="input" id="Rep5" size="25">
+			<br>
+			<p>Category:</p>
+			<br>
+			<select class="inputList" id="Rep3">
+				<option disabled selected value="0" style="font-style: italic;">Select category</option>
+				<option value="Electronics">Electronics</option>
+				<option value="IDCards">ID Cards</option>
+				<option value="Clothes">Clothes</option>
+				<option value="PersonalObjects">Personal Objects</option>
+				<option value="Books">Books</option>
+				<option value="Other">Other</option>
+			</select><br>
+			<p>Description:</p>
+			<input type="text" class="input" id="Rep4" size="120">
+			<br><br>
+			<input type="submit" class="Hbutton" value="Report" id="RepBut">
+			<span class="ErrorMsg" id="RepError"></span>
+		</form>
+		<form id="form4">
+			<p><b>Thank you for reporting the Item!</b></p>
+		</form>
+	</fieldset>
+
+	<fieldset class="hide" id="field4">
+		<p><b>We found this object(s) related to your Search:</b></p>
+
+		<div id="mainDiv">
+			
+		</div>
+
+		<p><b>If one of them is yours, use the email to get in contact!</b></p>
+		<br>
+		<input type="submit" class="Hbutton" value="None of them is mine" id="LosBut2">
+	</fieldset>
+
+	<fieldset class="hide" id="field5">
+		<p><b>This items were reported as Lost:</b></p>
+
+		<div id="mainDiv2">
+			
+		</div>
+
+		<p><b>If one of them may be what you found, use the email to get in contact. <br> Thank you for helping!</b></p>
+		<br>
+		<p><b>If none of the listed items is what you found, please continue by sending your report:</b></p>
+		<input type="submit" class="Hbutton" value="Report" id="RepBut2">
+	</fieldset>
+
+</body>
+<footer>
+	<span>
+		This site is for search and report lost items inside the campus of Tecnologico de Monterrey, Campus Monterrey.
+
+		Created by: Martin Lopez.
+	</span>
+	<img src = "./images/home.png" alt = "Home Icon" style="width:5%;" id="img2" align="right"/>
+
+	<script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./jquery/Hjq.js"> </script>
+</footer>
+</html>

@@ -1,0 +1,115 @@
+fieldset {
+	margin-top: 35px;
+	margin-bottom: 40px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 10px;
+	border: 3px dashed darkblue;
+	background-color: #cffbfe;
+	border-radius: 30px;
+}
+
+#img1 {
+	position: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+h1 {
+	color: #00009d;
+	padding: 10px;
+	text-align: center;
+	font-family: Apple Chancery;
+	font-size: 40px;
+	border-radius: 30px;
+}
+
+h3 {
+	color: #00009d;
+	text-align: center;
+	font-style: italic;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+form {
+	margin: 20px;
+	padding: 10px;
+}
+
+legend {
+	font-size: 25px;
+	font-weight: 900;
+	font-style: italic;
+	color: #00009d;
+}
+
+.Hbutton {
+	padding: 10px 10px;
+	text-align: center;
+	color: white;
+	border: 0;
+	border-radius: 15px;
+	background-color: #00009d;
+	font-size: 25px;
+}
+
+.Hbutton:hover {
+	cursor: pointer;
+	background-color: #5340ff;
+}
+
+body {
+	background-image: url('../images/entrada.png');
+	background-size: calc(100%);
+}
+
+span{
+	font-size: 15px;
+	color: #00009d;
+	background-color: #cffbfe;
+	border-radius: 5px;
+	padding: 5px;
+	border: 1px dashed darkblue;
+}
+
+.hide {
+	display: none;
+}
+
+#img2:hover {
+	cursor: pointer;
+}
+
+p {
+	font-size: 20px;
+	color: #00009d;
+}
+
+#p1 {
+	width: bold;
+}
+
+.ErrorMsg {
+	color: darkred;
+	border: none;
+	font-size: 20px;
+}
+
+pre {
+	font-size: 15px;
+	color: #00009d;
+	font-family: verdana;
+	padding-left: 2px;
+	margin-left: 2px;
+}
+
+.result {
+	margin: 15px;
+	padding: 10px;
+	background-color: #f1fefd;
+	border: 2px solid darkblue;
+	border-radius: 15px;
+}
